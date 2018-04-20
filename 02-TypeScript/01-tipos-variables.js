@@ -23,5 +23,21 @@ var Usuario = /** @class */ (function () {
     return Usuario;
 }());
 var usuario = new Usuario('marcelo', 22, '1715925739');
-console.log(usuario);
-//usuario.imprimirEnConsola();
+var usarioOtro = {
+    mNombre: 'marcelo',
+    mEdad: 23
+};
+var usuarioCuatro;
+usuarioCuatro = {
+    mNombre: 'hola',
+    mCedula: '1345',
+    mEdad: 22
+};
+var UsuarioTres = /** @class */ (function () {
+    function UsuarioTres(mNombre, mEdad, mCedula) {
+        this.mNombre = mNombre;
+        this.mEdad = mEdad;
+        this.mCedula = mCedula;
+    }
+    return UsuarioTres;
+}());

@@ -25,14 +25,47 @@ class Usuario {
         this.mEdad = edad;
         this.mCedula = cedula;
     }
-    public imprimirEnConsola(){
+
+    public imprimirEnConsola() {
         //Template String
         console.log(`el usuario se llama ${this.mNombre}, la edad es ${this.mEdad} y el numero de cedula esa ${this.mCedula}`);
     }
 
 }
 
-let usuario: Usuario = new Usuario('marcelo',22,'1715925739');
+let usuario: Usuario = new Usuario('marcelo', 22, '1715925739');
 
-console.log(usuario);
+let usarioOtro = {
+    mNombre: 'marcelo',
+    mEdad: 23
+};
+
+//console.log(usarioOtro)
+//console.log(usuario.imprimirEnConsola());
 //usuario.imprimirEnConsola();
+
+interface UsuarioDos {
+    mNombre: String;
+    mEdad: number;
+    mCedula: String;
+    //imprimirEnConsola (nombre:String):void;
+    //usuario:Usuario;
+
+}
+
+let usuarioCuatro: UsuarioDos;
+usuarioCuatro = {
+    mNombre: 'hola',
+    mCedula: '1345',
+    mEdad: 22
+}
+
+class UsuarioTres {
+    constructor(public mNombre: String,
+                private mEdad: number,
+                protected mCedula: String) {
+
+    }
+
+}
+
