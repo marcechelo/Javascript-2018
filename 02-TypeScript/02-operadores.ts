@@ -50,7 +50,7 @@ let usuariioConCincoAniosMenos = arregloUsuarios.map((usuario:UsuarioArreglo)=>{
     usuario.deuda = calculoDeudasUsuario(usuario.edad);
     return usuario;
     }
-).filter((usuario:UsuarioArreglo)=>{return usuario.deuda>100});
+).filter((usuario:UsuarioArreglo)=>{return usuario.deuda>|100});
 
 console.log(usuariioConCincoAniosMenos);
 
